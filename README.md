@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://eduardoboucas.github.io/include-media/">!['At' sign](https://eduardoboucas.github.io/include-media/assets/images/logo.png)</a>
 
-## Available Scripts
+# include-media [![Build Status](https://travis-ci.org/eduardoboucas/include-media.svg?branch=master)](https://travis-ci.org/eduardoboucas/include-media)
 
-In the project directory, you can run:
+> Simple, elegant and maintainable media queries in Sass
 
-### `yarn start`
+[![NPM badge](https://nodei.co/npm/include-media.png)](https://www.npmjs.com/package/include-media)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What?
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+**include-media** is a Sass library for writing CSS media queries in an easy and maintainable way, using a natural and simplistic syntax.
 
-### `yarn test`
+## Why?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I spent quite some time experimenting with different libraries and mixins available out there, but eventually all of them failed to do everything I needed in an elegant way. Some of them wouldn't let me mix set breakpoints with case-specific values, others wouldn't properly handle the CSS OR operator and most of them had a syntax that I found complicated and unnatural.
 
-### `yarn build`
+**include-media** was the result of that experience and it includes all the features I wish I had found before, whilst maintaining a simplistic and natural syntax.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to install
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- With npm: `npm install include-media`
+- With yarn: `yarn add include-media`
+- With Bower: `bower install include-media`
+- With Rails: `gem 'include_media_rails'` ([maintained by KaoruDev](https://github.com/KaoruDev/include_media_rails))
+- Manually: get [this file](https://raw.githubusercontent.com/eduardoboucas/include-media/master/dist/_include-media.scss)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Finally, include the file in your project using an `@import` statement.
 
-### `yarn eject`
+## How to use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Examples can be found [here](https://eduardoboucas.github.io/include-media/#features).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Plugins
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [include-media-export](https://github.com/eduardoboucas/include-media-export) - Reference **include-media** breakpoints in JavaScript.
+- [include-media-columns](https://github.com/eduardoboucas/include-media-columns) - Generate column classes using the [BEMIT naming convention](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/), automatically referencing **include-media** breakpoints.
+- [include-media-spread](https://github.com/jackmcpickle/include-media-spread) - Calculates the difference between property values and distributes them through your **include-media** breakpoints.
+- [flex_e_ble](https://github.com/jackmcpickle/flex_e_ble) - Uses your **include-media** breakpoints to create your own flexible class naming structure on top of a `flex` based grid with `inline-block` fallback for IE8+ compatibility.
+- [include-media-grid](https://github.com/tszarzynski/include-media-grid) - An **include-media** plugin for generating grid classes based on the flex display.
+- [im-to-em](https://gist.github.com/eduardoboucas/84144cd85cbd2ad4db1ca8b902585ca0) - A tiny function to convert **include-media** breakpoints from `px` to `em`.
+- [include-media-hidden-classes](https://github.com/eduardoboucas/include-media-hidden-classes) - An **include-media** plugin to generate classes for hiding elements.
+- [Fluid-Size](https://github.com/black7375/Fluid-Size): Use **include-media** breakepoints to provide the `fit size` for the device.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Learn more
 
-## Learn More
+- [https://eduardoboucas.github.io/include-media/](https://eduardoboucas.github.io/include-media/)
+- [Documentation](https://eduardoboucas.github.io/include-media/documentation/)
+- [Approaches to Media Queries in Sass](https://css-tricks.com/approaches-media-queries-sass/) (CSS-Tricks)
+- [Write Simple, Elegant and Maintainable Media Queries with Sass](https://davidwalsh.name/sass-media-query) (David Walsh blog)
+- [Generating Alternative Stylesheets for Browsers Without @media](https://davidwalsh.name/generating-alternative-stylesheets-browsers-media) (David Walsh blog)
+- [Create Simple Inline Media Queries with include-media](https://webdevstudios.com/2015/05/18/create-simple-inline-media-queries-include-media/) (WebDevStudios)
+- [Breakpoints and Tweakpoints in Sass](https://www.sitepoint.com/breakpoints-tweakpoints-sass/) (SitePoint)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Related projects
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [include-media-or](https://github.com/Nirazul/include-media-or) - A fork of **include-media** with support for complex queries with logical disjunctions (maintained by [Nirazul](https://github.com/Nirazul)).
 
-### Code Splitting
+## The authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+We are [Eduardo Bouças](https://twitter.com/eduardoboucas) and [Hugo Giraudel](https://twitter.com/hugogiraudel).
 
-### Analyzing the Bundle Size
+## We want to hear from you
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+We'll be on the lookout for your [issues](https://github.com/eduardoboucas/include-media/issues) and [pull requests](https://github.com/eduardoboucas/include-media/pulls) — but make sure you read [this](https://github.com/eduardoboucas/include-media/blob/master/CONTRIBUTING.md) before submitting any code!
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under [the terms of the MIT license](https://github.com/eduardoboucas/include-media/blob/master/LICENSE.md).
